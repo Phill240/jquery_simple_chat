@@ -1,0 +1,70 @@
+$font: 	Helvetica, sans-serif;
+$primary-background: 	#fff;
+$primary-color:		#000;
+
+$header-background:		#000;
+$header-color:		#fff;
+$header-height:		34px;
+
+$form-background:	#555;
+$textarea-height:	60px;
+
+
+
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font: 100% $font;
+	background: $primary-background;
+	color: $primary-color;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	line-height: $header-height;
+	background: $header-background;
+	color: $header-color;
+	text-align: center;
+	top: 0;
+}
+
+#messages-region {
+	margin: ($header-height + 30px) 20px ($textarea-height + 70px);
+}
+
+.messages {
+	margin: 0;
+}
+
+.message {
+	margin: 15px 0 30px;
+}
+
+.message__text {
+	margin: 0 0 5px;
+}
+
+#form-region {
+	position: fixed;
+	display: none;
+	width: 100%;
+	background: $form-background;
+	bottom: 0;
+}
+
+.form {
+	margin: 15px;
+}
+
+.form__textarea {
+	height: $textarea-height;
+	width: 100%;
+}
+
+.form__submit {
+	
+}
